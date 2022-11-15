@@ -29,6 +29,11 @@ h3{
     justify-content: center;
     overflow: hidden;
 }
-.backnone{
-    background-color: rgb(57, 73, 165);
+.border{
+    border:none;
+    border-bottom: 1px solid rgb(186, 185, 185);
+    background-color: transparent;
+    color: grey;
+    padding: 25px 0 10px 0;
+    outline: none;
 }
