@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+.firsttask{
+    background-color: bisque;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+@media screen and (max-width:575px) {
+    .firsttask{
+        background-color: rgb(98, 175, 102);
+    }
+    .firsttask div::after{
+        content: 'Mobile';
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:767px) and (min-width:576px){
+    .firsttask{
+        background-color: rgb(47, 47, 151);
+    }
+    .firsttask div::after{
+        content: 'Ipad';
+        font-size: 32px;
+    }
+}
+@media screen and (max-width:991px) and (min-width:768px){
+    .firsttask{
+        background-color: rgb(129, 211, 228);
+    }
+    .firsttask div::after{
+        content: 'Note';
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:1199px) and (min-width:992px){
+    .firsttask{
+        background-color: rgb(233, 139, 222);
+    }
+    .firsttask div::after{
+        content: 'Screen';
+        font-size: 48px;
+    }
+}
+@media screen and (max-width:1399px) and (min-width:1200px){
+    .firsttask{
+        background-color: rgb(218, 231, 76);
+    }
+    .firsttask div::after{
+        content: 'Desktop';
+        font-size: 56px;
+    }
+}
+@media screen and (min-width:1400px){
+    .firsttask{
+        background-color: rgb(220, 87, 105);
+    }
+    .firsttask div::after{
+        content: 'TV';
+        font-size: 64px;
+    }
+}

@@ -1,0 +1,28 @@
+
+.grid{
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(6, 1fr);
+    height: 200px;
+
+}
+img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+main{
+    display: flex;
+}
+aside{
+    width: 20vw;
+}
+article{
+    display: flex;
+
+}
+article img{
+    width: 20%;
+    height: 100%;
+}
