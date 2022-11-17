@@ -26,13 +26,14 @@
     z-index: 2;
     transition-property: top,left, border-radius, background-color;
     transition-duration: 2.5s, 1s, 3s, 3s;
+    transition-delay: 0s, 0.5s, 0s, 0s ;
 
 
 }
 .ball3{
     background-color: rgb(205, 222, 28);
     z-index: 1;
-    transition-delay: 0s, 1.5s;
+    transition-delay: 0s, 2.5s;
 }
 .shadow:hover .ball1{
     top: 0;

@@ -1,0 +1,54 @@
+body{
+    margin: 0 auto;
+    max-width: 1300px;
+}
+.grid{
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(6, 1fr);
+
+}
+.grid div{
+    height: 200px;
+}
+.news{
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .news{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:767px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    .news{
+        grid-template-columns: 1fr;
+    }
+}
+img{
+    height: 100%;
+    width:100%;
+    border-radius: 15px;
+}
+article{
+    display: flex;
+    margin:20px 0; 
+}
+.img{
+    width: 200px;
+}
+.pad{
+    padding: 0 20px;
+}
+.aside{
+    border-radius: 15px;
+    background-color: rgb(230, 230, 230);
+    padding: 0 20px;
+    margin: 20px 0;
+}
