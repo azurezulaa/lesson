@@ -9,7 +9,7 @@ body{
 
 }
 .grid div{
-    height: 200px;
+    height: 200px;      
 }
 .news{
     display: grid;
