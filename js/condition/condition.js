@@ -37,6 +37,19 @@ console.log(v);
 
 //undur jiliig olno uu
 
+let undurJil = 2023;
+
+if(undurJil%400 === 0){
+    undurJil = "mun";
+} else if (undurJil%100 === 0){
+    undurJil = "bish"
+} else if (undurJil%4 === 0){
+    undurJil = "mun"
+} else {
+    undurJil = "bish"
+}
+console.log(undurJil)
+
 //ugugdsun toonuudiin hamgiin ih bolon baga utgiig ol
 
 let aa = 4;
@@ -251,4 +264,86 @@ if (too%2 === 0){
     too = "sondgoi too"
 }
 console.log(too)
+
+//7
+let n2 = 5;
+
+if(n2<0){
+    n2 = "surug too"
+} else {
+    n2 = "eyreg too"
+}
+console.log(n2)
+
+//8
+
+let yearOfBirth;
+yearOfBirth = Number(prompt("Төрсөн оноо оруулна уу"));
+let old = 2022 - yearOfBirth;
+if (0 <= old && old <= 1){
+    old = "Infant";
+} else if(1 < old && old <= 3){
+    old = "Toddler";
+} else if(3 < old && old <= 5){
+    old = "Preschool"
+} else if(5 < old && old <= 12){
+    old = "Gradeschooler"
+} else if(12 < old && old <= 18){
+    old = "Teen"
+} else if(18 < old && old <= 21){
+    old = "Young adult"
+} else if(21 < old){
+    old = "Adult"
+}
+
+console.log(old);
+
+//temtseen
+
+let teamA1 = 96;
+let teamA2 = 108;
+let teamA3 = 0;
+
+let teamB1 = 96;
+let teamB2 = 103;
+let teamB3 = 0;
+
+let teamA = (teamA1 + teamA2 + teamA3)/3;
+let teamB = (teamB1 + teamB2 + teamB3)/3;
+
+let ylagch;
+
+if(teamA/100 >= 1 || teamB/100 >=1){
+    if(teamA > teamB){
+        ylagch = "Team A won";
+    } else if(teamB > teamA){
+        ylagch = "Team B won";
+    } else {
+        ylagch = "2 bag tentslee";
+    }
+} else {
+    ylagch = " baguud shaardlaga hangasangui ";
+}
+console.log(ylagch)
+
+//tip
+
+let tulbur = 100000;
+
+// if(tulbur >= 5000 && tulbur <=30000){
+//     tulbur = tulbur + (tulbur * 0.15);
+// } else {
+//     tulbur = tulbur + (tulbur * 0.2);                                                                                                                                                         
+// }
+
+tulbur >= 5000 && tulbur <=30000 ? tulbur = tulbur + (tulbur * 0.15) : tulbur = tulbur + (tulbur * 0.2);
+console.log(tulbur)
+
+
+
+
+
+
+
+
 

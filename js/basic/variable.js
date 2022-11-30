@@ -82,16 +82,20 @@ console.log("p =" + phi);
 console.log("toirgiin talbai =" + talbai);
 
 //13
-
-
-//14
 let ugugdul = 15;
 let bit = ((1024 ** 3) * ugugdul * 8);
 console.log("15Gbyte =" + bit + "bit");
 
+//14
+
+//15
+
+
+
+
 //22
 
-let too = prompt("3 orontoi too oruulna uu");
+let too = 123;
 let uldegdel = (too % 100);
 let hariu = (too - uldegdel);
 console.log(hariu/100);
