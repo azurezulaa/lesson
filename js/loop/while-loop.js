@@ -1,5 +1,5 @@
 
-//Loop
+//While Loop
 
 //1
 let count = 1;
@@ -126,9 +126,66 @@ while(i4 <= ugugdsunToo1){
 }
 console.log(startTegsh);
 //12
-let ugugdsunToo2 = "6458674";
-// console.log(ugugdsunToo2.substring(6,7))
-console.log(`${ugugdsunToo2.substring(2, 5)}${ugugdsunToo2.substring(0, 2)}`)
+let ugugdsunToo2 = "hello world";
+let l = ugugdsunToo2.length;
+let i5 = l - 1;
+let revText = "";
+while(i5 >= 0){
+    revText = revText + ugugdsunToo2[i5]
+    i5--;
+}
+console.log(revText);
+//13
+let ugugdsuntoo1 = 5473;
+let urwuuToo = 0;
+while (ugugdsuntoo1 !== 0){
+    unit = ugugdsuntoo1 % 10;
+    urwuuToo = urwuuToo * 10 + unit;
+    ugugdsuntoo1 = Math.floor(ugugdsuntoo1/10);
+}
+ugugdsuntoo1 = urwuuToo;
+let fulltext = "";
+while(urwuuToo !== 0 ){
+    let a = 10;
+    utga = urwuuToo % a;
+    let text;
+    switch(utga){
+            case 0:
+            text = " тэг";
+            break;
+            case 1:
+            text = " нэг";
+            break;
+            case 2:
+            text = " хоёр";
+            break;
+            case 3:
+            text = " гурав";
+            break;
+            case 4:
+            text = " дөрөв";
+            break;
+            case 5:
+            text = " тав";
+            break;
+            case 6:
+            text = " зургаа";
+            break;
+            case 7:
+            text = " долоо";
+            break;
+            case 8:
+            text = " найм";
+            break;
+            case 9:
+            text = " ес";
+            break;
+    }
+    fulltext = fulltext + text;
+    urwuuToo = Math.floor(urwuuToo / a);
+}
+console.log(fulltext);
+
 
 
 
