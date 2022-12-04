@@ -35,11 +35,27 @@ console.log(Math.round(Math.random() * (suuliinToo - ehniiToo) + ehniiToo));
 
 //validate phone number
 
-let mobile = Number(prompt("dugaaraa oruulna uu"));
-let numb = (typeof(mobile));
-if 
-console.log(numb)
-let mobileMon = `+${mobile}`;
+// let mobile = Number(prompt("ulsiin dugaaraa oruulna uu"));
+// let numb = typeof(mobile) === Number;//False gj garch ireed baina!!!
+// console.log(numb);
+//     let mobileMon = `+${mobile}`;
+//     if(mobileMon.substring(0, 4) === "+976"){
+//         if(mobileMon.length === 12){
+//             console.log("12 orontoi mongol dugaar mun");
+//         } else {
+//             console.log("mongol dugaariin oron buruu");
+//         }
+//     } else {
+//         console.log("ulsiin dugaar buruu baina");
+//     }
+
+
+//Register number
+
+let register = prompt("registeriin dugaaraa oruulna uu")
+if(register.length === 10){
+}
+
 
 
 

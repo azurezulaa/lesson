@@ -32,7 +32,7 @@ let iix = 4 !== 4; //false
 let ix = 4 != "4"; //false
 let x = 4 == "4"; //true
 let xi = 4 === "4"; //false
-console.log(v);
+console.log(xi);
 
 
 //undur jiliig olno uu

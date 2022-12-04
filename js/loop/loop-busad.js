@@ -11,8 +11,7 @@ console.log(urwuuTooN);
 
 //Toonii niilber
 
-// let a1 = Number(prompt("too oruulna uu"));
-let a1 = 10; 
+let a1 = 10; // let a1 = Number(prompt("too oruulna uu"));
 let n1 = 1;
 let sum1 = 0;
 while (n1 <= a1){ 
@@ -33,25 +32,84 @@ while (countT1 <= 100){
 
 //Guess the number
 
-let targetNumber = Math.floor(Math.random() * 10) + 1;
-console.log(targetNumber);
-let erh = 3;
-while(erh !== 0){
-    let randomNumber = Number(prompt("1-10 hoorond toog taanyy"));
-    if(randomNumber === targetNumber){
-        alert("Bayar hurgey");
-        break;
-    } else if(randomNumber < targetNumber){
-        alert("tanii oruulsan too baga bna");
-    } else {
-        alert("tanii oruulsan too ih bna");
+// let targetNumber = Math.floor(Math.random() * 10) + 1;
+// console.log(targetNumber);
+// let erh = 3;
+// while(erh !== 0){
+//     let randomNumber = Number(prompt("1-10 hoorond toog taanyy"));
+//     if(randomNumber === targetNumber){
+//         alert("Bayar hurgey");
+//         break;
+//     } else if(randomNumber < targetNumber){
+//         alert("tanii oruulsan too baga bna");
+//     } else {
+//         alert("tanii oruulsan too ih bna");
+//     }
+//     erh--;
+//     if (erh===0){
+//         alert("uuchlaarai ta taasangui");
+//     }
+// }
+
+//number digits
+
+let input = 768587; //let input = Number(prompt("too oruulna uu"));
+let oron = 0;
+while (input !== 0){
+    input = Math.floor(input/10)
+    oron++;
+}
+console.log(oron);
+
+//isn't it prime number?
+
+let n = 11; //let n = Number(prompt("100s baga anhnii too oruulna uu"));
+let anhniiToo = true;
+if (n <= 1){
+    console.log("anhnii too bish");
+} else if(n === 2){
+    console.log("anhnii too mun");
+} else {
+    let i = 2;
+    while(i < n){
+        if(n % i === 0){
+            anhniiToo = false;
+        }
+        break;//if dotor eswel while dotor baihiig asuuh
     }
-    erh--;
-    if (erh===0){
-        alert("uuchlaarai ta taasangui");
+    i++;
+    if(anhniiToo){
+        console.log("anhnii too mun");
+    } else {
+        console.log("anhnii too bish");
+    }
+
+}
+//factorial
+
+let facToo = 4; //let facToo = Number(prompt("toonii factorial bodoh"));
+let index = 1;
+let factorial = 1;
+while(index <= facToo){
+    factorial = factorial * index;
+    index++;
+}
+console.log(factorial);
+
+//convert string
+
+let input1 = "Hello World"
+let convert = "";
+
+for( let i = 0; i < input1.length; i++){
+    let letters = input1[i];
+    if(letters === letters.toUpperCase()){
+        convert = convert + letters.toLowerCase();
+    } else {
+        convert = convert + letters.toUpperCase();
     }
 }
-
+console.log(convert);
 //pyramid
 
 let od = "*";
@@ -59,12 +117,9 @@ let i = 10;
 let text = "";
 while(i !== 0){
     text = text + od;
-    
-
-
-
-
+    i--;
 }
+console.log(typeof(convert) == "String");
 
 
 
