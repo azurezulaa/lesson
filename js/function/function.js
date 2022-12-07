@@ -141,15 +141,64 @@ console.log(isPrime(5));
 //8
 function upperCase(array){
     for(let i = 0; i < array.length; i++){
-        array[i].toUpperCase();
+        array[i] = array[i].toUpperCase();
     }
     return array;
 }
 console.log(upperCase(olonlog3));
 //9
+function lowerCase(array){
+    for(let i = 0; i < array.length; i++){
+        array[i] = array[i].toLowerCase();
+    }
+    return array;
+}
+console.log(lowerCase(olonlog3));
 
 //tip
 
+let price = [3000, 27500, 100000];
+function nemegdel(arr){
+    let une = [];
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] > 30000 || arr[i] < 5000){
+            une.push(arr[i] * 0.2);
+        } else {
+            une.push(arr[i] * 0.15);
+        }
+    
+    }
+    return une;
+}
+function total(arr){
+    let niit = 0;
+    let une = nemegdel(arr);
+    for( let i = 0; i < arr.length; i++){
+        niit += arr[i] + une[i];
+    }
+    return niit;
+}
+function mid(arr){
+    let middle = total(arr)/arr.length;
+    return middle;
+}
+console.log("hoolnii dundaj une: " + mid(price));
+console.log("nemegdel: " + nemegdel(price));
+console.log("niit tulbur: " + total(price));
+
+//array sorter function
+
+let array1 = [4, 32, 2, 5, 8, -10, 20, 1, 0, -20];
+function arraySorter(arr){
+    let min = 0;
+    for(let i = 0; i < arr.length; i++){
+         if(arr[i] < min){
+            min = arr[i];
+         }
+    }
+    return min;
+}
+console.log(arraySorter(array1));
     
 
 

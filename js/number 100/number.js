@@ -36,10 +36,9 @@ console.log(Math.round(Math.random() * (suuliinToo - ehniiToo) + ehniiToo));
 // validate phone number
 
 // let mobile = Number(prompt("utasnii dugaaraa oruulna uu"));
-let mobile = Number("gbf");
-console.log(typeof(mobile));
-console.log(typeof(mobile) === "number");
-if (typeof(mobile) === "number"){
+let mobile = Number("9fg");
+console.log(isNaN(mobile));
+if (mobile > 0){
     let mobileMon = `+${mobile}`;
     if(mobileMon.substring(0, 4) === "+976"){
         if(mobileMon.length === 12){
@@ -53,14 +52,22 @@ if (typeof(mobile) === "number"){
 } else {
     console.log("zuwhun dugaar oruulna uu");
 }
-    
-
-
 //Register number
 
-// let register = prompt("registeriin dugaaraa oruulna uu")
-// if(register.length === 10){
-// }
+let register = prompt("registeriin dugaaraa oruulna uu");
+if(register.length === 10){
+    if(isNaN(Number(register[0])) && isNaN(Number(register[1]))){
+        if(!isNaN(Number(register.substring(2)))){
+            console.log("registriin dugaar zuw");
+        } else {
+            console.log("registriin dugaar toon utga buruu");
+        }
+    } else {
+        console.log("registriin dugaariin usgen utga buruu");
+    }
+} else { 
+    console.log("registriin dugaariin oron buruu");
+}
 
 
 
