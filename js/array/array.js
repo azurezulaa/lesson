@@ -89,19 +89,6 @@ console.log(arrayOfNumbers);
 arrayOfNumbers.unshift(8);
 console.log(arrayOfNumbers);
 
-//dawhar dawtalt
-
-let input = 5;
-let array = [];
-for (let i = 1; i <= input; i++){
-    array.push(i)
-    console.log(array);
-}
-for (let i = input; i >= 1; i--){
-    console.log(array);
-    array.pop(i)
-}
-
 //hoyr massive-n urjwer
 
 let arr1 = [3, 45, 23, 78, 34];

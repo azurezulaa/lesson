@@ -190,13 +190,20 @@ console.log("niit tulbur: " + total(price));
 
 let array1 = [4, 32, 2, 5, 8, -10, 20, 1, 0, -20];
 function arraySorter(arr){
-    let min = 0;
-    for(let i = 0; i < arr.length; i++){
-         if(arr[i] < min){
-            min = arr[i];
-         }
+    let sort = [];
+    let j = 0;
+    while(j < arr.length){
+        let min = arr[0];
+        for(let i = 0; i < arr.length; i++){
+                if(arr[i] < min){
+                min = arr[i];
+                } 
+             }
+         index = arr.indexOf(min);
+         sort.push(min);
+         arr.splice(index, 1);
     }
-    return min;
+    return sort;
 }
 console.log(arraySorter(array1));
     

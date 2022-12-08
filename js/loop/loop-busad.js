@@ -30,6 +30,18 @@ while (countT1 <= 100){
     countT1++;
 }
 
+//dawhar dawtalt
+
+let inp = 5;
+let array = [];
+for (let i = 1; i <= inp; i++){
+    array.push(i)
+    console.log(array);
+}
+for (let i = inp; i >= 1; i--){
+    console.log(array);
+    array.pop(i)
+}
 //Guess the number
 
 // let targetNumber = Math.floor(Math.random() * 10) + 1;
