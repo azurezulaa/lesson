@@ -189,14 +189,15 @@ console.log("niit tulbur: " + total(price));
 //array sorter function
 
 let array1 = [4, 32, 2, 5, 8, -10, 20, 1, 0, -20];
+let array2 = [...array1];
 function arraySorter(arr){
     let sort = [];
-    let j = 0;
-    while(j < arr.length){
+    let i = 0;
+    while(i < arr.length){
         let min = arr[0];
-        for(let i = 0; i < arr.length; i++){
-                if(arr[i] < min){
-                min = arr[i];
+        for(let j = 0; j < arr.length; j++){
+                if(arr[j] < min){
+                min = arr[j];
                 } 
              }
          index = arr.indexOf(min);
@@ -206,6 +207,12 @@ function arraySorter(arr){
     return sort;
 }
 console.log(arraySorter(array1));
+array2.sort(function(a, b){
+    if(a > b){
+        return 1;
+    } else return -1;
+});
+console.log(array2);
     
 
 
