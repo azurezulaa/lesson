@@ -1,13 +1,3 @@
-//Urwuu Too
-
-let ugugdsunTooN = 1234567890;
-urwuuTooN = 0;
-while (ugugdsunTooN !== 0){
-    unit = ugugdsunTooN % 10;
-    urwuuTooN = urwuuTooN * 10 + unit;
-    ugugdsunTooN = Math.floor(ugugdsunTooN/10);
-}
-console.log(urwuuTooN);
 
 //Toonii niilber
 
@@ -42,26 +32,6 @@ for (let i = inp; i >= 1; i--){
     console.log(array);
     array.pop(i)
 }
-//Guess the number
-
-// let targetNumber = Math.floor(Math.random() * 10) + 1;
-// console.log(targetNumber);
-// let erh = 3;
-// while(erh !== 0){
-//     let randomNumber = Number(prompt("1-10 hoorond toog taanyy"));
-//     if(randomNumber === targetNumber){
-//         alert("Bayar hurgey");
-//         break;
-//     } else if(randomNumber < targetNumber){
-//         alert("tanii oruulsan too baga bna");
-//     } else {
-//         alert("tanii oruulsan too ih bna");
-//     }
-//     erh--;
-//     if (erh===0){
-//         alert("uuchlaarai ta taasangui");
-//     }
-// }
 
 //number digits
 
@@ -72,6 +42,17 @@ while (input !== 0){
     oron++;
 }
 console.log(oron);
+
+//Urwuu Too
+
+let ugugdsunTooN = 1234567890;
+urwuuTooN = 0;
+while (ugugdsunTooN !== 0){
+    unit = ugugdsunTooN % 10;
+    urwuuTooN = urwuuTooN * 10 + unit;
+    ugugdsunTooN = Math.floor(ugugdsunTooN/10);
+}
+console.log(urwuuTooN);
 
 //isn't it prime number?
 
@@ -97,6 +78,19 @@ if (n <= 1){
     }
 
 }
+
+//tsifr hurtel
+
+let output = "";
+for(let i = 0; i < 4; i++){
+    output += " " + i
+}
+console.log(output);
+
+for(let i = 5; i <= 9; i++){
+    console.log(i);
+}
+
 //factorial
 
 let facToo = 4; //let facToo = Number(prompt("toonii factorial bodoh"));
@@ -107,6 +101,27 @@ while(index <= facToo){
     index++;
 }
 console.log(factorial);
+
+//Guess the number
+
+// let targetNumber = Math.floor(Math.random() * 10) + 1;
+// console.log(targetNumber);
+// let erh = 3;
+// while(erh !== 0){
+//     let randomNumber = Number(prompt("1-10 hoorond toog taanyy"));
+//     if(randomNumber === targetNumber){
+//         alert("Bayar hurgey");
+//         break;
+//     } else if(randomNumber < targetNumber){
+//         alert("tanii oruulsan too baga bna");
+//     } else {
+//         alert("tanii oruulsan too ih bna");
+//     }
+//     erh--;
+//     if (erh===0){
+//         alert("uuchlaarai ta taasangui");
+//     }
+// }
 
 //convert string
 
@@ -122,16 +137,71 @@ for( let i = 0; i < input1.length; i++){
     }
 }
 console.log(convert);
+
+//fibonacci
+
+let n2 = 100;
+let output2 = "";
+let a = 0;
+let b = 1;
+let c = 1;
+while(c <= n2){
+    output2 += " " + c;
+    c = a + b;
+    a = b;
+    b = c;
+    
+}
+console.log(output2)
+
+//palindromic-number
+
+let input3 = 110;
+let y = input3;
+let rev = 0;
+while(y !== 0){
+    x = y % 10;
+    rev = rev * 10 + x;
+    y = Math.floor(y/10);
+}
+if(rev === input3){
+    console.log(input3 + " bol palindromic too mun");
+} else {
+    console.log(input3 + " bol palindromic too bish");
+}
+
+// square
+
+let nToo = 5;
+
+for(let i = 1; i <= nToo; i++){
+    let text = "";
+    for(let j = 1; j <= nToo; j++){
+        if(i === 1){
+            text += "*";
+        } else if(j === 1 || j === nToo){
+            text += "*";
+        } else if(i === nToo){
+            text += "*";
+        } else {
+            text += " ";
+        }
+    }
+    console.log(text);
+}
+// console.log(text);
+
+
 //pyramid
 
-let od = "*";
-let i = 10;
-let text = "";
-while(i !== 0){
-    text = text + od;
-    i--;
-}
-console.log(typeof(convert) == "String");
+// let od = "*";
+// let i = 10;
+// let text = "";
+// while(i !== 0){
+//     text = text + od;
+//     i--;
+// }
+// console.log(typeof(convert) == "String");
 
 
 

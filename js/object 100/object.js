@@ -28,7 +28,6 @@ let students = [
     gender: "female"
 },
 ]
-
 function huis(obj){
         let male = 0;
         let female = 0;
@@ -441,7 +440,7 @@ for(let i = 0; i < suuliin5Too.length; i++){
     }
 }
 console.log(suuliin5TooData);
-//hamgiin ih zaragdsan 5 baraanii huwi hemjee (too hemjeegeer)
+//hamgiin baga zaragdsan 5 baraanii huwi hemjee (too hemjeegeer)
 let huwiToosuuliin5 = [];
 for(let i = 0; i < suuliin5Too.length; i++){
     for(let j = 0; j < data.length; j++)
