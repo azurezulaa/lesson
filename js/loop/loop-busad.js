@@ -189,19 +189,9 @@ for(let i = 1; i <= nToo; i++){
     }
     console.log(text);
 }
-// console.log(text);
-
 
 //pyramid
 
-// let od = "*";
-// let i = 10;
-// let text = "";
-// while(i !== 0){
-//     text = text + od;
-//     i--;
-// }
-// console.log(typeof(convert) == "String");
 
 
 
