@@ -192,6 +192,25 @@ for(let i = 1; i <= nToo; i++){
 
 //pyramid
 
+let row = 9;
 
+for(let i = 0; i < row; i++){
+    let text = '';
+    for(let j = i + 1; j <= row; j++ ){
+        if(j < row){
+            text += ' ';
+        } else {
+            text += '*';
+        }
+    }
+    let n = 0;
+    while(i > 0){
+        text += '**';
+        i--;
+        n++;
+    }
+    i += n;
+console.log(text);
+}
 
 
