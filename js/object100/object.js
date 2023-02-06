@@ -62,9 +62,6 @@ let students = [
 // console.log(students);
 
 let sameAge = [];
-
-for()
-
 //simple object
 
 // let nohoi = {};
